@@ -4,15 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
  <h1>Pokedex</h1>
- <img src="teste.png" alt="" srcset="" id="pokedex">
- <p id="namePokemon">Nome pokemon</p>
+ <div class="pokedexMain">
+  <img src="https://manualdodev.github.io/pokedex/images/pokedex.png" alt="" srcset="" id="pokedex">
+ </div>
+ <div>
   <img src="" alt="" id="imgPokemon">
-  <p id="descriptionPokemon">Descrição do pokemon</p>
+ </div>
+ <input type="text" name="" id="inputNamePokemon">
+ <button id="btnInputNamePokemon"> Go </button>
+  <div class="infoPokemon">
+    <p id="namePokemon">Pikachu</p>
+    <div>
+     <div class="typePokemon">
+      <img src="imagens/eletrical.webp" alt="">
+      <p>Electric</p>
+     </div>
+     <div>
+      <img src="" alt="">
+      <p>Poison(Veneno)</p>
+    </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

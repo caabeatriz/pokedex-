@@ -1,8 +1,57 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 #imgPokemon{
   position: absolute;
-  top: 220px;
-  left: 50px;
+  left: 42%;
+  top: 45%;
+  height: 15%;
 }
 #pokedex{
   position: absolute;
+}
+.pokedexMain{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+#inputNamePokemon{
+  position: absolute;
+  left: 40%;
+  top: 66%;
+}
+#btnInputNamePokemon{
+  position: absolute;
+  left: 55%;
+  top: 66%;
+}
+#namePokemon{
+  color: white;
+  background-color: #000000ba;
+  width: 13%;
+  padding: 12px;
+  border-radius: 9%;
+  text-align: center;
+  text-transform: uppercase;
+      box-shadow:-6px 1px 0px 1px rgb(0 0 0 / 91%);
+      ;
+}
+.typePokemon{
+  display: flex;
+}
+.typePokemon img {
+  width: 5%;
+}
+.typePokemon p {
+  color: white;
+  background-color: #000000ba;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.infoPokemon{
+  position: absolute;
+  left: 33%;
+  top: 73%;
+
 }

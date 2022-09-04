@@ -1,22 +1,54 @@
-//https://pokeapi.co/api/v2/pokemon/ditto
-// instalar lint
-// deixar bem estilizado
-//1. coolocar a imagem ao fundo da pokedex
-// 2. colocar descrição na caixa preta e ela ir digitando
-//3. ao clicar no botão ele muda de pokemon
-//4. bonus: a pokedex abre e faz sons 
-async function  acessApi(namePokemon){
-  let acessApiPokemon =  (await fetch(`https://pokeapi.co/api/v2/pokemon/pikachu`)).json()
-  return acessApiPokemon
-}
+// * 3 - // Crie um algoritmo que receba o id de um produto e uma quantidade
+// e retorne o preço total
+const techProducts = [
+  {
+      id: 1, // numérico
+      name: 'computer', // string
+      price: 2100, // number
+  },
+  {
+      id: 2,
+      name: 'mouse',
+      price: 78,
+  },
+  {
+      id: 3,
+      name: 'monitor',
+      price: 589,
+  },
+  {
+      id: 4,
+      name: 'keyboard',
+      price: 78,
+  },
+  {
+      id: 5,
+      name: 'HD',
+      price: 350,
+  },
+  {
+      id: 6,
+      name: 'webcam',
+      price: 187,
+  },
+  {
+      id: 7,
+      name: 'mic',
+      price: 78,
+  },
+  {
+      id: 8,
+      name: 'headset',
+      price: 216,
+  },
+];
+const totalPrice = (id, quantidade,array) => {
+  console.log( 'teste');
+  const encontraElemento = array.find((elemento) => {
+    return elemento.id === id;
+  })
+ const precoTotal = encontraElemento.price * quantidade;
+ return precoTotal;
 
-let createPokemon =  async (namePokemon) => {
-  let pokemon = await acessApi()
-  document.querySelector('#namePokemon').innerHTML = pokemon.species.name;
-  document.querySelector('#imgPokemon').src = pokemon.sprites.front_default;
-  document.querySelector('#descriptionPokemon').innerHTML = await pokemon.flavor_text_
-  entries
-  console.log('teste', pokemon);
 }
-
-console.log(createPokemon());
+console.log(totalPrice(1, 2, techProducts));
